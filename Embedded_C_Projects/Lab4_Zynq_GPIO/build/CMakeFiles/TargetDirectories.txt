@@ -1,3 +1,0 @@
-C:/Users/Andreea/GPIO_PS_ZYNQ_2/Lab4_Zynq_GPIO/build/CMakeFiles/Lab4_Zynq_GPIO.elf.dir
-C:/Users/Andreea/GPIO_PS_ZYNQ_2/Lab4_Zynq_GPIO/build/CMakeFiles/edit_cache.dir
-C:/Users/Andreea/GPIO_PS_ZYNQ_2/Lab4_Zynq_GPIO/build/CMakeFiles/rebuild_cache.dir
