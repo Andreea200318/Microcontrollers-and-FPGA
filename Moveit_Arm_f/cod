@@ -9,7 +9,6 @@
 
 #include <moveit_visual_tools/moveit_visual_tools.h>
 
-// The circle constant tau = 2*pi. One tau is one rotation in radians.
 const double tau = 2 * M_PI;
 
 int main(int argc, char** argv)
@@ -17,160 +16,130 @@ int main(int argc, char** argv)
   ros::init(argc, argv, "move_group_interface_tutorial");
   ros::NodeHandle node_handle;
 
-  // ROS spinning must be running for the MoveGroupInterface to get information
-  // about the robot's state. One way to do this is to start an AsyncSpinner
-  // beforehand.
   ros::AsyncSpinner spinner(1);
   spinner.start();
 
-  // BEGIN_TUTORIAL
-  //
-  // Setup
-  // ^^^^^
-  //
-  // MoveIt operates on sets of joints called "planning groups" and stores them in an object called
-  // the `JointModelGroup`. Throughout MoveIt the terms "planning group" and "joint model group"
-  // are used interchangeably.
   static const std::string PLANNING_GROUP = "panda_arm";
 
-  // The :planning_interface:`MoveGroupInterface` class can be easily
-  // setup using just the name of the planning group you would like to control and plan for.
   moveit::planning_interface::MoveGroupInterface move_group_interface(PLANNING_GROUP);
-
-  // We will use the :planning_interface:`PlanningSceneInterface`
-  // class to add and remove collision objects in our "virtual world" scene
   moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
 
-  // Raw pointers are frequently used to refer to the planning group for improved performance.
   const moveit::core::JointModelGroup* joint_model_group =
       move_group_interface.getCurrentState()->getJointModelGroup(PLANNING_GROUP);
 
-  // Visualization
-  // ^^^^^^^^^^^^^
-  //
-  // The package MoveItVisualTools provides many capabilities for visualizing objects, robots,
-  // and trajectories in RViz as well as debugging tools such as step-by-step introspection of a script.
   namespace rvt = rviz_visual_tools;
   moveit_visual_tools::MoveItVisualTools visual_tools("panda_link0");
   visual_tools.deleteAllMarkers();
 
-  // Remote control is an introspection tool that allows users to step through a high level script
-  // via buttons and keyboard shortcuts in RViz
   visual_tools.loadRemoteControl();
 
-  // RViz provides many types of markers, in this demo we will use text, cylinders, and spheres
   Eigen::Isometry3d text_pose = Eigen::Isometry3d::Identity();
   text_pose.translation().z() = 1.0;
-  visual_tools.publishText(text_pose, "MoveGroupInterface Demo", rvt::WHITE, rvt::XLARGE);
+  visual_tools.publishText(text_pose, "Pick and Place Demo", rvt::WHITE, rvt::XLARGE);
 
-  // Batch publishing is used to reduce the number of messages being sent to RViz for large visualizations
   visual_tools.trigger();
 
-  // Getting Basic Information
-  // ^^^^^^^^^^^^^^^^^^^^^^^^^
-  //
-  // We can print the name of the reference frame for this robot.
+  // Declarații pentru mesaje de informare
   ROS_INFO_NAMED("tutorial", "Planning frame: %s", move_group_interface.getPlanningFrame().c_str());
-
-  // We can also print the name of the end-effector link for this group.
   ROS_INFO_NAMED("tutorial", "End effector link: %s", move_group_interface.getEndEffectorLink().c_str());
-
-  // We can get a list of all the groups in the robot:
   ROS_INFO_NAMED("tutorial", "Available Planning Groups:");
   std::copy(move_group_interface.getJointModelGroupNames().begin(),
             move_group_interface.getJointModelGroupNames().end(), std::ostream_iterator<std::string>(std::cout, ", "));
 
-  // Start the demo
-  // ^^^^^^^^^^^^^^^^^^^^^^^^^
-  visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to start the demo");
+  visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to add the table and ball");
 
-  // Adăugăm obiecte în scena de planificare
+  // Adăugare masă
   moveit_msgs::CollisionObject table;
-  table.header.frame_id = move_group_interface.getPlanningFrame();
   table.id = "table";
+  table.header.frame_id = move_group_interface.getPlanningFrame();
 
   shape_msgs::SolidPrimitive table_primitive;
   table_primitive.type = table_primitive.BOX;
-  table_primitive.dimensions = {1.0, 1.0, 0.2};
+  table_primitive.dimensions = {0.5, 1.0, 0.1}; // dimensiuni: 0.5m x 1m x 0.1m
 
   geometry_msgs::Pose table_pose;
   table_pose.orientation.w = 1.0;
   table_pose.position.x = 0.5;
   table_pose.position.y = 0.0;
-  table_pose.position.z = 0.1;
+  table_pose.position.z = 0.05; // poziție în centrul scenei
 
   table.primitives.push_back(table_primitive);
   table.primitive_poses.push_back(table_pose);
   table.operation = table.ADD;
 
-  planning_scene_interface.applyCollisionObject(table);
+  // Adăugare minge
+  moveit_msgs::CollisionObject ball;
+  ball.id = "ball";
+  ball.header.frame_id = move_group_interface.getPlanningFrame();
 
-  moveit_msgs::CollisionObject object;
-  object.header.frame_id = move_group_interface.getPlanningFrame();
-  object.id = "object";
+  shape_msgs::SolidPrimitive ball_primitive;
+  ball_primitive.type = ball_primitive.SPHERE;
+  ball_primitive.dimensions = {0.05}; // rază: 5 cm
 
-  shape_msgs::SolidPrimitive object_primitive;
-  object_primitive.type = object_primitive.CYLINDER;
-  object_primitive.dimensions = {0.2, 0.04};
+  geometry_msgs::Pose ball_pose;
+  ball_pose.orientation.w = 1.0;
+  ball_pose.position.x = 0.5;
+  ball_pose.position.y = 0.0;
+  ball_pose.position.z = 0.15; // deasupra mesei
 
-  geometry_msgs::Pose object_pose;
-  object_pose.orientation.w = 1.0;
-  object_pose.position.x = 0.5;
-  object_pose.position.y = 0.0;
-  object_pose.position.z = 0.35;
+  ball.primitives.push_back(ball_primitive);
+  ball.primitive_poses.push_back(ball_pose);
+  ball.operation = ball.ADD;
 
-  object.primitives.push_back(object_primitive);
-  object.primitive_poses.push_back(object_pose);
-  object.operation = object.ADD;
+  planning_scene_interface.applyCollisionObjects({table, ball});
 
-  planning_scene_interface.applyCollisionObject(object);
-
-  visual_tools.publishText(text_pose, "Added Objects", rvt::WHITE, rvt::XLARGE);
+  visual_tools.publishText(text_pose, "Table and ball added", rvt::WHITE, rvt::XLARGE);
   visual_tools.trigger();
-  visual_tools.prompt("Press 'next' in Rviz to start IK demo");
 
-  // Folosim IK pentru a muta brațul către poziția obiectului
-  moveit::core::RobotState start_state(*move_group_interface.getCurrentState());
-  geometry_msgs::Pose grasp_pose;
-  grasp_pose.orientation.w = 1.0;
-  grasp_pose.position.x = 0.5;
-  grasp_pose.position.y = 0.0;
-  grasp_pose.position.z = 0.4;
+  visual_tools.prompt("Press 'next' to move to the ball and pick it up");
 
-  start_state.setFromIK(joint_model_group, grasp_pose);
-  move_group_interface.setStartState(start_state);
-  move_group_interface.setPoseTarget(grasp_pose);
+  // Mișcare către minge
+  geometry_msgs::Pose target_pose;
+  target_pose.orientation.w = 1.0;
+  target_pose.position.x = 0.5;
+  target_pose.position.y = 0.0;
+  target_pose.position.z = 0.25; // deasupra mingii
+
+  move_group_interface.setPoseTarget(target_pose);
 
   moveit::planning_interface::MoveGroupInterface::Plan my_plan;
   bool success = (move_group_interface.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
 
-  ROS_INFO_NAMED("demo", "Visualizing plan to grasp object: %s", success ? "SUCCESS" : "FAILED");
+  ROS_INFO_NAMED("tutorial", "Visualizing plan (approach ball) %s", success ? "" : "FAILED");
+  visual_tools.publishTrajectoryLine(my_plan.trajectory_, joint_model_group);
+  visual_tools.trigger();
+
+  move_group_interface.move();
+
+  // Prinderea mingii
+  ROS_INFO_NAMED("tutorial", "Attaching the ball");
+  move_group_interface.attachObject(ball.id);
+
+  visual_tools.publishText(text_pose, "Ball attached", rvt::WHITE, rvt::XLARGE);
+  visual_tools.trigger();
+
+  visual_tools.prompt("Press 'next' to lift the ball");
+
+  // Ridicare minge
+  target_pose.position.z += 0.2; // Ridicare cu 20 cm
+  move_group_interface.setPoseTarget(target_pose);
+
+  success = (move_group_interface.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+  ROS_INFO_NAMED("tutorial", "Visualizing plan (lift ball) %s", success ? "" : "FAILED");
 
   visual_tools.publishTrajectoryLine(my_plan.trajectory_, joint_model_group);
   visual_tools.trigger();
-  visual_tools.prompt("Press 'next' in Rviz to execute the grasp");
 
-  if (success)
-  {
-    move_group_interface.execute(my_plan);
-    ROS_INFO_NAMED("demo", "Plan executed successfully");
-  }
+  move_group_interface.move();
 
-  // Atașăm obiectul de braț
-  ROS_INFO_NAMED("demo", "Attaching object to robot");
-  move_group_interface.attachObject(object.id);
+  // Final
+  ROS_INFO_NAMED("tutorial", "Demo complete. Detaching and removing objects.");
 
-  visual_tools.publishText(text_pose, "Object Attached", rvt::WHITE, rvt::XLARGE);
+  move_group_interface.detachObject(ball.id);
+  planning_scene_interface.removeCollisionObjects({"table", "ball"});
+
+  visual_tools.publishText(text_pose, "Objects removed", rvt::WHITE, rvt::XLARGE);
   visual_tools.trigger();
-  visual_tools.prompt("Press 'next' in Rviz to detach the object");
-
-  // Detach and remove the object
-  move_group_interface.detachObject(object.id);
-  planning_scene_interface.removeCollisionObjects({table.id, object.id});
-
-  visual_tools.publishText(text_pose, "Object Detached and Removed", rvt::WHITE, rvt::XLARGE);
-  visual_tools.trigger();
-  visual_tools.prompt("Press 'next' in Rviz to end the demo");
 
   ros::shutdown();
   return 0;
