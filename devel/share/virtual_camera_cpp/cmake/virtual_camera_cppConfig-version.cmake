@@ -1,0 +1,1 @@
+/home/andreea/ws_moveit/devel/.private/virtual_camera_cpp/share/virtual_camera_cpp/cmake/virtual_camera_cppConfig-version.cmake

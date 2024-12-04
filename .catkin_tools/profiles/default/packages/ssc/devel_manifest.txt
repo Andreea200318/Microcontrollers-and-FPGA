@@ -1,0 +1,6 @@
+ssc
+/home/andreea/ws_moveit/devel/.private/ssc/cmake.lock /home/andreea/ws_moveit/devel/./cmake.lock
+/home/andreea/ws_moveit/devel/.private/ssc/lib/ssc/ssc_camera_node /home/andreea/ws_moveit/devel/lib/ssc/ssc_camera_node
+/home/andreea/ws_moveit/devel/.private/ssc/lib/pkgconfig/ssc.pc /home/andreea/ws_moveit/devel/lib/pkgconfig/ssc.pc
+/home/andreea/ws_moveit/devel/.private/ssc/share/ssc/cmake/sscConfig-version.cmake /home/andreea/ws_moveit/devel/share/ssc/cmake/sscConfig-version.cmake
+/home/andreea/ws_moveit/devel/.private/ssc/share/ssc/cmake/sscConfig.cmake /home/andreea/ws_moveit/devel/share/ssc/cmake/sscConfig.cmake

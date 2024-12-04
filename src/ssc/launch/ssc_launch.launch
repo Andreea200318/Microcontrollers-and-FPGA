@@ -1,0 +1,10 @@
+<launch>
+  <!-- Lansare cameră -->
+  <node pkg="realsense2_camera" type="realsense2_camera_node" name="camera" output="screen" />
+
+  <!-- Lansare Panda -->
+  <include file="$(find panda_moveit_config)/launch/demo.launch" />
+
+  <!-- Lansare nod -->
+  <node pkg="ssc" type="ssc_camera_node" name="ssc_camera_node" output="screen" />
+</launch>

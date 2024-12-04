@@ -1,0 +1,1 @@
+/home/andreea/ws_moveit/devel/.private/virtual_camera_cpp/lib/pkgconfig/virtual_camera_cpp.pc

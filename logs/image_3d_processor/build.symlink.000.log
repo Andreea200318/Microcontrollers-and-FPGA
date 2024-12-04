@@ -1,0 +1,4 @@
+Symlinking /home/andreea/ws_moveit/devel/lib/image_3d_processor/image_3d_processor_node
+Symlinking /home/andreea/ws_moveit/devel/lib/pkgconfig/image_3d_processor.pc
+Symlinking /home/andreea/ws_moveit/devel/share/image_3d_processor/cmake/image_3d_processorConfig-version.cmake
+Symlinking /home/andreea/ws_moveit/devel/share/image_3d_processor/cmake/image_3d_processorConfig.cmake

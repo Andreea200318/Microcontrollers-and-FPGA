@@ -1,0 +1,8 @@
+prefix=/home/andreea/ws_moveit/install
+
+Name: ssc
+Description: Description of ssc
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

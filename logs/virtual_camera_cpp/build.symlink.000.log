@@ -1,0 +1,4 @@
+Symlinking /home/andreea/ws_moveit/devel/lib/virtual_camera_cpp/virtual_camera_node
+Symlinking /home/andreea/ws_moveit/devel/lib/pkgconfig/virtual_camera_cpp.pc
+Symlinking /home/andreea/ws_moveit/devel/share/virtual_camera_cpp/cmake/virtual_camera_cppConfig-version.cmake
+Symlinking /home/andreea/ws_moveit/devel/share/virtual_camera_cpp/cmake/virtual_camera_cppConfig.cmake

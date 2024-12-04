@@ -1,0 +1,19 @@
+<launch>
+    <!-- Load URDF -->
+    <param name="robot_description" command="$(find xacro)/xacro '$(find panda_camera_config)/urdf/panda_camera.urdf.xacro'"/>
+    
+    <!-- Start robot state publisher -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    
+    <!-- Start joint state publisher with GUI -->
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/>
+
+    <!-- Launch MoveIt -->
+    <include file="$(find panda_moveit_config)/launch/demo.launch">
+        <arg name="load_robot_description" value="false"/>
+        <arg name="use_rviz" value="true"/>
+    </include>
+
+    <!-- Launch camera simulator node -->
+    <node name="camera_simulator" pkg="panda_camera_config" type="camera_node" output="screen"/>
+</launch>

@@ -1,0 +1,1 @@
+/home/andreea/ws_moveit/devel/.private/franka_example_controllers/share/roseus/ros/franka_example_controllers/manifest.l

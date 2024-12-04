@@ -1,0 +1,4 @@
+Symlinking /home/andreea/ws_moveit/devel/lib/rviz_demo/rviz_demo
+Symlinking /home/andreea/ws_moveit/devel/lib/pkgconfig/rviz_demo.pc
+Symlinking /home/andreea/ws_moveit/devel/share/rviz_demo/cmake/rviz_demoConfig.cmake
+Symlinking /home/andreea/ws_moveit/devel/share/rviz_demo/cmake/rviz_demoConfig-version.cmake

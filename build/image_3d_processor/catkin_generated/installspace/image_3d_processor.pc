@@ -1,0 +1,8 @@
+prefix=/home/andreea/ws_moveit/install
+
+Name: image_3d_processor
+Description: Description of image_3d_processor
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs cv_bridge pcl_ros image_transport pcl_conversions
