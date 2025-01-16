@@ -1,0 +1,9 @@
+The robot can determine and transmit to the user several significant parameters:
+
+Soil moisture level: For plants to grow, the soil needs to be moist, as it contains nutrients that provide the essential chemical elements for the roots.
+Air humidity: (40% - 70%)
+Temperature: (5°C - 21°C for planting and 18°C - 32°C for germination)
+CO2 levels: The average concentration is 0.03%, and levels above 5% become toxic.
+The robot is equipped with a multifunctional arm that allows the insertion of the soil moisture sensor into the ground, as well as the removal of weeds or plants affected by weather conditions. It will analyze the area using a camera and transmit images to the supervisor along with the data. If it determines that a plant needs to be removed, it will execute the command.
+
+I have started developing a new method for the robot to recognize which plants are affected by weather conditions (this is still in development). The unit will be powered by six 3V photovoltaic cells, providing an eco-friendly power source. If the power supply from the cells is insufficient, they will be replaced with two 9V batteries.
