@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target rviz_demo[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/rviz_demo.dir/src/rviz_demo.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/andreea/ws_moveit/devel/.private/rviz_demo/lib/rviz_demo/rviz_demo[0m
-[100%] Built target rviz_demo

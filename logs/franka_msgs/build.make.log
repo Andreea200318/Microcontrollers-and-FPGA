@@ -31,8 +31,8 @@
 [  0%] Built target sensor_msgs_generate_messages_lisp
 [  0%] Built target std_msgs_generate_messages_lisp
 [ 19%] Built target franka_msgs_generate_messages_nodejs
-[ 57%] Built target franka_msgs_generate_messages_cpp
-[ 59%] Built target franka_msgs_generate_messages_eus
-[ 78%] Built target franka_msgs_generate_messages_lisp
-[100%] Built target franka_msgs_generate_messages_py
+[ 39%] Built target franka_msgs_generate_messages_eus
+[ 59%] Built target franka_msgs_generate_messages_cpp
+[ 80%] Built target franka_msgs_generate_messages_py
+[100%] Built target franka_msgs_generate_messages_lisp
 [100%] Built target franka_msgs_generate_messages

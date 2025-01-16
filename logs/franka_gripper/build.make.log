@@ -21,16 +21,16 @@
 [  0%] Built target _franka_gripper_generate_messages_check_deps_StopResult
 [  0%] Built target _franka_gripper_generate_messages_check_deps_StopActionGoal
 [  0%] Built target _franka_gripper_generate_messages_check_deps_HomingAction
-[  0%] Built target actionlib_msgs_generate_messages_cpp
 [  0%] Built target _franka_gripper_generate_messages_check_deps_GraspActionGoal
+[  0%] Built target actionlib_msgs_generate_messages_cpp
 [  0%] Built target _franka_gripper_generate_messages_check_deps_GraspGoal
 [  0%] Built target _franka_gripper_generate_messages_check_deps_GraspActionFeedback
 [  0%] Built target _franka_gripper_generate_messages_check_deps_GraspFeedback
 [  0%] Built target _franka_gripper_generate_messages_check_deps_GraspAction
 [  0%] Built target _franka_gripper_generate_messages_check_deps_HomingResult
+[  0%] Built target _franka_gripper_generate_messages_check_deps_GraspResult
 [  0%] Built target actionlib_msgs_generate_messages_lisp
 [  0%] Built target actionlib_msgs_generate_messages_py
-[  0%] Built target _franka_gripper_generate_messages_check_deps_GraspResult
 [  0%] Built target actionlib_msgs_generate_messages_eus
 [  0%] Built target control_msgs_generate_messages_cpp
 [  0%] Built target std_msgs_generate_messages_py
@@ -66,8 +66,8 @@
 [ 19%] Built target franka_gripper_generate_messages_nodejs
 [ 19%] Built target roscpp_generate_messages_nodejs
 [ 19%] Built target trajectory_msgs_generate_messages_lisp
-[ 19%] Built target actionlib_generate_messages_eus
 [ 19%] Built target rosgraph_msgs_generate_messages_cpp
+[ 19%] Built target actionlib_generate_messages_eus
 [ 19%] Built target trajectory_msgs_generate_messages_py
 [ 19%] Built target sensor_msgs_generate_messages_cpp
 [ 19%] Built target sensor_msgs_generate_messages_eus
@@ -77,6 +77,6 @@
 [ 57%] Built target franka_gripper_generate_messages_lisp
 [ 77%] Built target franka_gripper_generate_messages_py
 [ 97%] Built target franka_gripper_generate_messages_eus
+[ 97%] Built target franka_gripper_generate_messages
 [ 98%] Built target franka_gripper
-[ 98%] Built target franka_gripper_generate_messages
 [100%] Built target franka_gripper_node

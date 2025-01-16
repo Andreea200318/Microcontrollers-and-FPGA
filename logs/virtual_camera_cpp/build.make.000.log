@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target virtual_camera_node[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/virtual_camera_node.dir/src/virtual_camera.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/andreea/ws_moveit/devel/.private/virtual_camera_cpp/lib/virtual_camera_cpp/virtual_camera_node[0m
-[100%] Built target virtual_camera_node

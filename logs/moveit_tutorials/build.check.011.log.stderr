@@ -1,0 +1,7 @@
+[31m[1mCMake Error[0m at /home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/CMakeLists.txt:2 (target_link_libraries):
+  Cannot specify link libraries for target
+  "move_group_interface_tutorial/opt/ros/noetic/lib/libmoveit_common_planning_interface_objects.so"
+  which is not built by this project.
+
+
+make: *** [Makefile:2336: cmake_check_build_system] Error 1

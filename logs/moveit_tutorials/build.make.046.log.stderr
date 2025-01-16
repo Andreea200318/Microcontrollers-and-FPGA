@@ -1,0 +1,13 @@
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp: In function ‘void addCollisionObject(moveit::planning_interface::PlanningSceneInterface&)’:
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:138:60: error: ‘moveit_msgs::Primitive’ has not been declared
+  138 |     collision_objects[0].primitives[0].type = moveit_msgs::Primitive::BOX;
+      |                                                            ^~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:154:60: error: ‘moveit_msgs::Primitive’ has not been declared
+  154 |     collision_objects[1].primitives[0].type = moveit_msgs::Primitive::BOX;
+      |                                                            ^~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:170:60: error: ‘moveit_msgs::Primitive’ has not been declared
+  170 |     collision_objects[2].primitives[0].type = moveit_msgs::Primitive::BOX;
+      |                                                            ^~~~~~~~~
+make[2]: *** [doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/build.make:63: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/src/move_group_interface_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4280: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

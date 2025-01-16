@@ -1,0 +1,34 @@
+[  4%] Built target controller_manager_example
+[ 13%] Built target interactivity_utils
+[ 18%] Built target ros_api_tutorial
+[ 22%] Built target motion_planning_api_tutorial
+[35m[1mScanning dependencies of target move_group_interface_tutorial[0m
+[ 27%] Built target motion_planning_pipeline_tutorial
+[ 31%] Built target bag_publisher_maintain_time
+[ 34%] [32mBuilding CXX object doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/src/move_group_interface_tutorial.cpp.o[0m
+[ 38%] Built target detect_and_add_cylinder_collision_object_demo
+[ 43%] Built target pick_place_tutorial
+[ 47%] Built target planning_scene_tutorial
+[ 52%] Built target planning_scene_ros_api_tutorial
+[ 56%] Built target robot_model_and_robot_state_tutorial
+[ 61%] Built target state_display_tutorial
+[ 65%] Built target subframes_tutorial
+[ 70%] Built target trajopt_example
+[ 79%] Built target moveit_lerp_planner_plugin
+[ 84%] Built target lerp_example
+[ 88%] Built target visualizing_collisions_tutorial
+[ 93%] Built target moveit_cpp_tutorial
+[ 97%] Built target bullet_collision_checker_tutorial
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp: In function ‘void addCollisionObject(moveit::planning_interface::PlanningSceneInterface&)’:
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:138:60: error: ‘moveit_msgs::Primitive’ has not been declared
+  138 |     collision_objects[0].primitives[0].type = moveit_msgs::Primitive::BOX;
+      |                                                            ^~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:154:60: error: ‘moveit_msgs::Primitive’ has not been declared
+  154 |     collision_objects[1].primitives[0].type = moveit_msgs::Primitive::BOX;
+      |                                                            ^~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:170:60: error: ‘moveit_msgs::Primitive’ has not been declared
+  170 |     collision_objects[2].primitives[0].type = moveit_msgs::Primitive::BOX;
+      |                                                            ^~~~~~~~~
+make[2]: *** [doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/build.make:63: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/src/move_group_interface_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4280: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
