@@ -1,0 +1,32 @@
+vhdl xpm  \
+"F:/Facultate/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl xbip_utils_v3_0_13  \
+"../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vhdl axi_utils_v2_0_9  \
+"../../ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vhdl xbip_pipe_v3_0_9  \
+"../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_wrapper_v3_0_6  \
+"../../ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_addsub_v3_0_9  \
+"../../ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_multadd_v3_0_9  \
+"../../ipstatic/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_bram18k_v3_0_9  \
+"../../ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vhdl mult_gen_v12_0_21  \
+"../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vhdl floating_point_v7_1_18  \
+"../../ipstatic/hdl/floating_point_v7_1_rfs.vhd" \
+
+# Do not sort compile order
+nosort
