@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../lab_10_tema.srcs/sources_1/new/impartitor.vhd" \
-"../../../../lab_10_tema.srcs/sim_1/new/tb_impartitor.vhd" \
-
-# Do not sort compile order
-nosort

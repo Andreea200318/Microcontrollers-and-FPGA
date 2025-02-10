@@ -1,5 +1,0 @@
-Time resolution is 1 ps
-Error: Test 1 failed
-Time: 350 ns  Iteration: 0  Process: /tb_impartitor/stim_process  File: D:/lab_10_tema/lab_10_tema.srcs/sim_1/new/tb_impartitor.vhd
-Error: Test 2 failed
-Time: 730 ns  Iteration: 2  Process: /tb_impartitor/stim_process  File: D:/lab_10_tema/lab_10_tema.srcs/sim_1/new/tb_impartitor.vhd
