@@ -1,0 +1,6 @@
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:562:1: error: expected declaration before ‘}’ token
+  562 | }
+      | ^
+make[2]: *** [doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/build.make:63: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/src/move_group_interface_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4280: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,15 @@
+{
+  "name": "ex2_cod",
+  "type": "HOST",
+  "platform": "D:\\Zybo_CSA\\ex2\\export\\ex2\\ex2.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}

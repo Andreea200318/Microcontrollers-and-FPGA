@@ -1,0 +1,15 @@
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:21:30: warning: missing terminating " character
+   21 |     posture.joint_names[0] = "panda_finger_joint1;
+      |                              ^
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:21:30: error: missing terminating " character
+   21 |     posture.joint_names[0] = "panda_finger_joint1;
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:39:30: warning: missing terminating " character
+   39 |     posture.joint_names[0] = "panda_finger_joint1;
+      |                              ^
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:39:30: error: missing terminating " character
+   39 |     posture.joint_names[0] = "panda_finger_joint1;
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/build.make:63: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/src/move_group_interface_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4280: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,8 @@
+prefix=/home/andreea/ws_moveit/devel/.private/virtual_camera_cpp
+
+Name: virtual_camera_cpp
+Description: Description of virtual_camera_cpp
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp cv_bridge image_transport sensor_msgs

@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Nov 30 13:59:49 2024
+# Process ID: 19024
+# Current directory: D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1
+# Command line: vivado.exe -log design_1_axi_gpio_0_6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_6.tcl
+# Log file: D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1/design_1_axi_gpio_0_6.vds
+# Journal file: D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1\vivado.jou
+# Running On        :DESKTOP-S2GG9RF
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :8260 MB
+# Swap memory       :25769 MB
+# Total Virtual     :34030 MB
+# Available Virtual :17197 MB
+#-----------------------------------------------------------
+source design_1_axi_gpio_0_6.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 513.660 ; gain = 198.578
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_6
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 7064120a905c0859 to dir: D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/lab_10_tema/lab_10_tema.cache/ip/2024.1/7/0/7064120a905c0859/design_1_axi_gpio_0_2.dcp to D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1/design_1_axi_gpio_0_6.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/lab_10_tema/lab_10_tema.cache/ip/2024.1/7/0/7064120a905c0859/design_1_axi_gpio_0_2_sim_netlist.v to D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1/design_1_axi_gpio_0_6_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/lab_10_tema/lab_10_tema.cache/ip/2024.1/7/0/7064120a905c0859/design_1_axi_gpio_0_2_sim_netlist.vhdl to D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1/design_1_axi_gpio_0_6_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/lab_10_tema/lab_10_tema.cache/ip/2024.1/7/0/7064120a905c0859/design_1_axi_gpio_0_2_stub.v to D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1/design_1_axi_gpio_0_6_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/lab_10_tema/lab_10_tema.cache/ip/2024.1/7/0/7064120a905c0859/design_1_axi_gpio_0_2_stub.vhdl to D:/lab_10_tema/lab_10_tema.runs/design_1_axi_gpio_0_6_synth_1/design_1_axi_gpio_0_6_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_0_6, cache-ID = 7064120a905c0859.
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 14:00:00 2024...

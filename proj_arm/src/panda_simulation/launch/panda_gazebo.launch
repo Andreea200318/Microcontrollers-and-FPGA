@@ -1,0 +1,13 @@
+<launch>
+  <!-- Lansare Gazebo -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+  </include>
+
+  <!-- Încarcă robotul Panda cu camera -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <param name="robot_description" command="cat $(find panda_simulation)/urdf/panda_with_camera.urdf"/>
+  </node>
+</launch>

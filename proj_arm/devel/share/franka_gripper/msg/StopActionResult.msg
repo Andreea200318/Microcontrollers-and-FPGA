@@ -1,0 +1,1 @@
+/home/andreea/ws_moveit/devel/.private/franka_gripper/share/franka_gripper/msg/StopActionResult.msg

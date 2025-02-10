@@ -1,0 +1,34 @@
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp: In function ‘int main(int, char**)’:
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:73:2: error: expected primary-expression before ‘/’ token
+   73 |  /ROS_INFO_NAMED("tutorial", "Planning frame: %s", move_group_interface.getPlanningFrame().c_str());
+      |  ^
+In file included from /opt/ros/noetic/include/ros/ros.h:40,
+                 from /opt/ros/noetic/include/urdf/model.h:50,
+                 from /opt/ros/noetic/include/moveit/robot_model/robot_model.h:44,
+                 from /opt/ros/noetic/include/moveit/robot_state/robot_state.h:40,
+                 from /opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:41,
+                 from /home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:1:
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:73:3: error: expected primary-expression before ‘do’
+   73 |  /ROS_INFO_NAMED("tutorial", "Planning frame: %s", move_group_interface.getPlanningFrame().c_str());
+      |   ^~~~~~~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:466:25: error: redeclaration of ‘geometry_msgs::Pose box_pose’
+  466 |     geometry_msgs::Pose box_pose;
+      |                         ^~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:332:23: note: ‘geometry_msgs::Pose box_pose’ previously declared here
+  332 |   geometry_msgs::Pose box_pose;
+      |                       ^~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:476:47: error: redeclaration of ‘std::vector<moveit_msgs::CollisionObject_<std::allocator<void> >, std::allocator<moveit_msgs::CollisionObject_<std::allocator<void> > > > collision_objects’
+  476 |     std::vector<moveit_msgs::CollisionObject> collision_objects;
+      |                                               ^~~~~~~~~~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:342:45: note: ‘std::vector<moveit_msgs::CollisionObject_<std::allocator<void> >, std::allocator<moveit_msgs::CollisionObject_<std::allocator<void> > > > collision_objects’ previously declared here
+  342 |   std::vector<moveit_msgs::CollisionObject> collision_objects;
+      |                                             ^~~~~~~~~~~~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:495:10: error: redeclaration of ‘bool success’
+  495 |     bool success = (move_group_interface.plan(grasp_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+      |          ^~~~~~~
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:105:8: note: ‘bool success’ previously declared here
+  105 |   bool success = (move_group_interface.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
+      |        ^~~~~~~
+make[2]: *** [doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/build.make:63: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/src/move_group_interface_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4280: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

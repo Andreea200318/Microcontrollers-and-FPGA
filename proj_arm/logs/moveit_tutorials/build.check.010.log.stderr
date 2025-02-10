@@ -1,0 +1,8 @@
+[31m[1mCMake Error[0m at /opt/ros/noetic/share/catkin/cmake/custom_install.cmake:13 (_install):
+  _install TARGETS given target "move_group_interface_tutorial" which does
+  not exist.
+[36mCall Stack (most recent call first):[0m
+  doc/move_group_interface/CMakeLists.txt:3 (install)
+
+
+make: *** [Makefile:2336: cmake_check_build_system] Error 1

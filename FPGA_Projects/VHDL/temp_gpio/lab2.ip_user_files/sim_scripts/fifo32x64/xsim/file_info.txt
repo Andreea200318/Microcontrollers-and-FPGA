@@ -1,0 +1,2 @@
+fifo32x64.v,verilog,xil_defaultlib,../../../../lab2.gen/sources_1/ip/fifo32x64/sim/fifo32x64.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

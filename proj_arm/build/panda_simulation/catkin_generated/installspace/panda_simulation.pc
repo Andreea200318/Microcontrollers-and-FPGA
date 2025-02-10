@@ -1,0 +1,8 @@
+prefix=/home/andreea/ws_moveit/install
+
+Name: panda_simulation
+Description: Description of panda_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+/home/andreea/ws_moveit/devel/.private/moveit_msgs/share/roseus/ros/moveit_msgs/msg/MotionPlanDetailedResponse.l

@@ -1,0 +1,1 @@
+/home/andreea/ws_moveit/devel/.private/ssc/share/ssc/cmake/sscConfig-version.cmake

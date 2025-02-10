@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Oct 12 20:13:00 2024
+# Process ID: 14664
+# Current directory: C:/Users/Andreea/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32460 C:\Users\Andreea\lab2\lab2.xpr
+# Log file: C:/Users/Andreea/lab2/vivado.log
+# Journal file: C:/Users/Andreea/lab2\vivado.jou
+# Running On        :DESKTOP-S2GG9RF
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :8260 MB
+# Swap memory       :21474 MB
+# Total Virtual     :29735 MB
+# Available Virtual :9383 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Andreea/lab2/lab2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench_stimulus_file.tcl
+close_sim
+launch_simulation
+source testbench_stimulus_file.tcl
+close_sim
+launch_simulation
+source testbench_stimulus_file.tcl
+close_sim
+launch_simulation
+source testbench_stimulus_file.tcl
+close_sim
+launch_simulation
+source testbench_stimulus_file.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim

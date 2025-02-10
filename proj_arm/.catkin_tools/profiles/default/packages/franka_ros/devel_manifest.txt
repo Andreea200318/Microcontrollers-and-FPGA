@@ -1,0 +1,2 @@
+franka_ros/franka_ros
+/home/andreea/ws_moveit/devel/.private/franka_ros/cmake.lock /home/andreea/ws_moveit/devel/./cmake.lock

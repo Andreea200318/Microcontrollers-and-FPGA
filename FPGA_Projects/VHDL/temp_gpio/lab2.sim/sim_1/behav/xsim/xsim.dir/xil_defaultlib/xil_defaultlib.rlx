@@ -1,0 +1,12 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/Andreea/lab2/lab2.gen/sources_1/ip/fifo32x64/sim/fifo32x64.v,1728318512,verilog,,C:/Users/Andreea/lab2/lab2.gen/sources_1/ip/fp_sqrt/sim/fp_sqrt.v,,fifo32x64,,,../../../../lab2.ip_user_files/ipstatic/hdl,,,,,
+C:/Users/Andreea/lab2/lab2.gen/sources_1/ip/fp_abs/sim/fp_abs.v,1728744665,verilog,,C:/Users/Andreea/lab2/lab2.gen/sources_1/ip/fp_subtractor/sim/fp_subtractor.v,,fp_abs,,,../../../../lab2.ip_user_files/ipstatic/hdl,,,,,
+C:/Users/Andreea/lab2/lab2.gen/sources_1/ip/fp_sqrt/sim/fp_sqrt.v,1728742922,verilog,,C:/Users/Andreea/lab2/lab2.gen/sources_1/ip/fp_abs/sim/fp_abs.v,,fp_sqrt,,,../../../../lab2.ip_user_files/ipstatic/hdl,,,,,
+C:/Users/Andreea/lab2/lab2.gen/sources_1/ip/fp_subtractor/sim/fp_subtractor.v,1728318513,verilog,,,,fp_subtractor,,,../../../../lab2.ip_user_files/ipstatic/hdl,,,,,
+C:/Users/Andreea/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Users/Andreea/lab2/lab2.srcs/sources_1/imports/lab2/temperature_subtractor.vhd,1728318492,vhdl,,,,temperature_subtractor,,,,,,,,
+C:/Users/Andreea/lab2/lab2.srcs/sources_1/imports/lab2/testbench_stimulus_file.vhd,1728754621,vhdl,,,,testbench_stimulus_file,,,,,,,,
+C:/Users/Andreea/lab2/lab2.srcs/sources_1/new/temperature_sqrt_diff.vhd,1728750433,vhdl,,,,temperature_sqrt_diff,,,,,,,,

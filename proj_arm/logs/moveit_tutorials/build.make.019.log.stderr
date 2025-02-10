@@ -1,0 +1,28 @@
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp: In function ‘int main(int, char**)’:
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:88:21: error: no matching function for call to ‘moveit::planning_interface::MoveGroupInterface::plan()’
+   88 |     move_group.plan();
+      |                     ^
+In file included from /home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:1:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:759:33: note: candidate: ‘moveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::plan(moveit::planning_interface::MoveGroupInterface::Plan&)’
+  759 |   moveit::core::MoveItErrorCode plan(Plan& plan);
+      |                                 ^~~~
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:759:33: note:   candidate expects 1 argument, 0 provided
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:92:21: error: no matching function for call to ‘moveit::planning_interface::MoveGroupInterface::plan()’
+   92 |     move_group.plan();
+      |                     ^
+In file included from /home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:1:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:759:33: note: candidate: ‘moveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::plan(moveit::planning_interface::MoveGroupInterface::Plan&)’
+  759 |   moveit::core::MoveItErrorCode plan(Plan& plan);
+      |                                 ^~~~
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:759:33: note:   candidate expects 1 argument, 0 provided
+/home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:100:21: error: no matching function for call to ‘moveit::planning_interface::MoveGroupInterface::plan()’
+  100 |     move_group.plan();
+      |                     ^
+In file included from /home/andreea/ws_moveit/src/moveit_tutorials/doc/move_group_interface/src/move_group_interface_tutorial.cpp:1:
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:759:33: note: candidate: ‘moveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::plan(moveit::planning_interface::MoveGroupInterface::Plan&)’
+  759 |   moveit::core::MoveItErrorCode plan(Plan& plan);
+      |                                 ^~~~
+/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:759:33: note:   candidate expects 1 argument, 0 provided
+make[2]: *** [doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/build.make:63: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/src/move_group_interface_tutorial.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4280: doc/move_group_interface/CMakeFiles/move_group_interface_tutorial.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
