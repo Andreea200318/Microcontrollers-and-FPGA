@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Oct  9 19:01:55 2025
+# Process ID: 26017
+# Current directory: /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project
+# Command line: vivado .
+# Log file: /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/vivado.log
+# Journal file: /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/vivado.jou
+# Running On: DESKTOP-S2GG9RF, OS: Linux, CPU Frequency: 2496.010 MHz, CPU Physical cores: 6, Host memory: 4011 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/bpm_diplay.v
+update_compile_order -fileset sources_1

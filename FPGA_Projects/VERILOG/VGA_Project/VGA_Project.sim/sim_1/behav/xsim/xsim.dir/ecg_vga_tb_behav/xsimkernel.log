@@ -1,0 +1,4 @@
+Running: xsim.dir/ecg_vga_tb_behav/xsimk -simmode gui -wdb ecg_vga_tb_behav.wdb -simrunnum 0 -socket 33381
+Design successfully loaded
+Design Loading Memory Usage: 23404 KB (Peak: 23968 KB)
+Design Loading CPU Usage: 0 ms

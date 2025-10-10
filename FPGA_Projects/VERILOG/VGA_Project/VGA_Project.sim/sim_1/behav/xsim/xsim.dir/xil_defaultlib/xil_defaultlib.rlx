@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/bpm_diplay.v,1760025980,verilog,,/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/ecg_vga_top.v,,bpm_display,,,,,,,,
+/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/ecg_vga_tb.v,1760026068,verilog,,,,ecg_vga_tb,,,,,,,,
+/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/ecg_vga_top.v,1760025658,verilog,,/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/vga_controller.v,,ecg_vga_top,,,,,,,,
+/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/vga_controller.v,1760022711,verilog,,/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/sources_1/new/ecg_vga_tb.v,,vga_controller,,,,,,,,
