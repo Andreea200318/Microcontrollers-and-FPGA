@@ -1,0 +1,186 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 9431
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Oct 10 16:02:13 EEST 2025
+Time zone: 	Eastern European Standard Time (Europe/Bucharest)
+
+OS: PRETTY_NAME="Kali GNU/Linux Rolling"
+OS Version: 6.1.21.2-microsoft-WSL2-K+
+OS Architecture: amd64
+Available processors (cores): 12
+LSB Release Description: Kali GNU/Linux Rolling
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	/xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7
+Java executable: 	/xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	analog
+User home directory: /home/analog
+User working directory: /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /xilinx/Vivado
+HDI_APPROOT: /xilinx/Vivado/2023.2
+RDI_DATADIR: /xilinx/Vivado/2023.2/data
+RDI_BINDIR: /xilinx/Vivado/2023.2/bin
+
+Vivado preferences file: /home/analog/.Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: /home/analog/.Xilinx/Vivado/2023.2/
+Vivado layouts directory: /home/analog/.Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	/xilinx/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/vivado.log
+Vivado journal file: 	/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-9431-DESKTOP-S2GG9RF
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /xilinx/Vivado/2023.2
+RDI_BASEROOT: /xilinx/Vivado
+RDI_BINROOT: /xilinx/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /xilinx/Vivado/2023.2/data
+RDI_INSTALLROOT: /xilinx
+RDI_INSTALLVER: 2023.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: /xilinx/Vivado/2023.2/lib/lnx64.o/Default:/xilinx/Vivado/2023.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /xilinx/Vitis/2023.2/bin:/xilinx/Vivado/2023.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project:DESKTOP-S2GG9RF_1760101316_9362
+RDI_SHARED_DATA: /xilinx/SharedData/2023.2/data
+RDI_TPS_ROOT: /xilinx/Vivado/2023.2/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /bin/bash
+XILINX: /xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: /xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: /xilinx/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: /xilinx/Vivado/2023.2
+XILINX_SDK: /xilinx/Vitis/2023.2
+XILINX_VITIS: /xilinx/Vitis/2023.2
+XILINX_VIVADO: /xilinx/Vivado/2023.2
+XILINX_VIVADO_HLS: /xilinx/Vivado/2023.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,419 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 68 MB. Current time: 10/10/25, 4:02:14 PM EEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.xpr", 0); // b.c (PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS)
+// Opening Vivado Project: /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.xpr. Version: Vivado v2023.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 134 MB (+137725kb) [00:00:35]
+// [Engine Memory]: 1,576 MB (+1500748kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  2195 ms.
+// Tcl Message: open_project /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/xilinx/Vivado/2023.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,669 MB. GUI used memory: 72 MB. Current time: 10/10/25, 4:02:40 PM EEST
+// [Engine Memory]: 1,669 MB (+15605kb) [00:00:37]
+// Project name: VGA_Project; location: /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// [Engine Memory]: 2,081 MB (+343685kb) [00:00:38]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// [GUI Memory]: 144 MB (+3636kb) [00:01:00]
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a (PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE)
+// Tcl Command: 'file mkdir /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/constrs_1'
+// Tcl Message: file mkdir /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/constrs_1 
+// Elapsed time: 235 seconds
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "vgapmod", true); // Q (PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Constraints File"); // u (dialog1)
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// Tcl Command: 'file mkdir /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/constrs_1/new'
+// 'f' command handler elapsed time: 243 seconds
+dismissDialog("Add Sources"); // c (dialog0)
+// Tcl Message: file mkdir /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/constrs_1/new 
+// Tcl Message: close [ open /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/constrs_1/new/vgapmod.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 /home/analog/Microcontrollers-and-FPGA/FPGA_Projects/VERILOG/VGA_Project/VGA_Project.srcs/constrs_1/new/vgapmod.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, vgapmod.xdc]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, vgapmod.xdc]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,119 MB. GUI used memory: 74 MB. Current time: 10/10/25, 4:07:14 PM EEST
+// Elapsed time: 60 seconds
+selectCodeEditor("vgapmod.xdc", 326, 18); // ad (vgapmod.xdc)
+// Elapsed time: 65 seconds
+selectCodeEditor("vgapmod.xdc", 199, 62); // ad (vgapmod.xdc)
+// [GUI Memory]: 153 MB (+2032kb) [00:17:39]
+// Elapsed time: 745 seconds
+selectCodeEditor("vgapmod.xdc", 594, 23); // ad (vgapmod.xdc)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,718 MB. GUI used memory: 75 MB. Current time: 10/10/25, 4:37:14 PM EEST
