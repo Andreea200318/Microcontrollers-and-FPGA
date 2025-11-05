@@ -44,7 +44,10 @@ module vga_controller(
     end
 
     always @(posedge clk) begin
-            p_tick <= 0;
+    if (reset)
+        p_tick <= 0;
+    else
+        p_tick <= (clk_div == 4); 
     end
     always @(posedge clk) begin
         if (reset) begin 
