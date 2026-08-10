@@ -1,0 +1,573 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Apr 16 23:11:41 2026
+# Process ID: 514812
+# Current directory: /home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1
+# Command line: vivado -log design_1_finn_design_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_finn_design_wrapper_0_0.tcl
+# Log file: /home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/design_1_finn_design_wrapper_0_0.vds
+# Journal file: /home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/vivado.jou
+# Running On: DESKTOP-N2392HC, OS: Linux, CPU Frequency: 2188.800 MHz, CPU Physical cores: 8, Host memory: 8126 MB
+#-----------------------------------------------------------
+source design_1_finn_design_wrapper_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1318.898 ; gain = 0.027 ; free physical = 3267 ; free virtual = 5639
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andreea/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_0_ba18_35j'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_1_hufrydzu'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_2_1079yvcg'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_ylwxevm4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_3_oq4_hgum'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_MVAU_hls_0_162klhtr/project_MVAU_hls_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_4_r0c39d43'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_t6ksgcvj'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_5_rypyiejn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingMaxPool_hls_0_f38gb_sw/project_StreamingMaxPool_hls_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_6_amabx6h_'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_2_598a5s36'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_7_ln61hkns'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_MVAU_hls_1_3j5wqvxh/project_MVAU_hls_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_8_iv3q_gwl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_MVAU_rtl_0_5cofkz0f'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_9_s54x7wfo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 1535.004 ; gain = 216.105 ; free physical = 3001 ; free virtual = 5391
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_finn_design_wrapper_0_0
+Command: synth_design -top design_1_finn_design_wrapper_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 515612
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-9661] initial value of parameter 'ADDR_BITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/axi2we.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'XCOUNTER_BITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'YCOUNTER_BITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:37]
+WARNING: [Synth 8-9661] initial value of parameter 'NUM_CHANNELS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:38]
+WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:39]
+WARNING: [Synth 8-9661] initial value of parameter 'ELEM_BITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:40]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_XON' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:41]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_XOFF' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:42]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_XEND' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:43]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_YON' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:44]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_YOFF' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:45]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_YEND' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding.sv:46]
+WARNING: [Synth 8-9661] initial value of parameter 'XCOUNTER_BITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'YCOUNTER_BITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:37]
+WARNING: [Synth 8-9661] initial value of parameter 'NUM_CHANNELS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:38]
+WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:39]
+WARNING: [Synth 8-9661] initial value of parameter 'ELEM_BITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:40]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_XON' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:41]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_XOFF' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:42]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_XEND' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:43]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_YON' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:44]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_YOFF' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:45]
+WARNING: [Synth 8-9661] initial value of parameter 'INIT_YEND' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_y0emcnwp/fmpadding_axi.sv:46]
+WARNING: [Synth 8-9661] initial value of parameter 'BIT_WIDTH' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_impl.sv:32]
+WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_impl.sv:33]
+WARNING: [Synth 8-9661] initial value of parameter 'MMV_IN' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_impl.sv:34]
+WARNING: [Synth 8-9661] initial value of parameter 'MMV_OUT' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_impl.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'LOOP_H_ITERATIONS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'LOOP_W_ITERATIONS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:37]
+WARNING: [Synth 8-9661] initial value of parameter 'LOOP_KH_ITERATIONS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:38]
+WARNING: [Synth 8-9661] initial value of parameter 'LOOP_KW_ITERATIONS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:39]
+WARNING: [Synth 8-9661] initial value of parameter 'LOOP_SIMD_ITERATIONS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:40]
+WARNING: [Synth 8-9661] initial value of parameter 'INCR_BITWIDTH' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:42]
+WARNING: [Synth 8-9661] initial value of parameter 'IS_DEPTHWISE' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:44]
+WARNING: [Synth 8-9661] initial value of parameter 'HEAD_INCR_SIMD' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:46]
+WARNING: [Synth 8-9661] initial value of parameter 'HEAD_INCR_KW' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:47]
+WARNING: [Synth 8-9661] initial value of parameter 'HEAD_INCR_KH' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:48]
+WARNING: [Synth 8-9661] initial value of parameter 'HEAD_INCR_W' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:49]
+WARNING: [Synth 8-9661] initial value of parameter 'HEAD_INCR_H' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:50]
+WARNING: [Synth 8-9661] initial value of parameter 'TAIL_INCR_W' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:51]
+WARNING: [Synth 8-9661] initial value of parameter 'TAIL_INCR_H' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:52]
+WARNING: [Synth 8-9661] initial value of parameter 'TAIL_INCR_LAST' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:53]
+WARNING: [Synth 8-9661] initial value of parameter 'INNERMOST_STATE' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:55]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:150]
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:151]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:207]
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/swg_common.sv:208]
+WARNING: [Synth 8-9661] initial value of parameter 'IBITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_2_598a5s36/dwc.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'OBITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_2_598a5s36/dwc.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'IBITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_2_598a5s36/dwc_axi.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'OBITS' is omitted [/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_2_598a5s36/dwc_axi.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'PE' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_4sx4u.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_4sx4u.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'ACCU_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_4sx4u.sv:37]
+WARNING: [Synth 8-9661] initial value of parameter 'PE' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'ACCU_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:37]
+WARNING: [Synth 8-9661] initial value of parameter 'ACTIVATION_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:38]
+WARNING: [Synth 8-9661] initial value of parameter 'WEIGHT_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:39]
+WARNING: [Synth 8-9661] initial value of parameter 'IS_MVU' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'PE' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv:37]
+WARNING: [Synth 8-9661] initial value of parameter 'ACTIVATION_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv:38]
+WARNING: [Synth 8-9661] initial value of parameter 'WEIGHT_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv:39]
+WARNING: [Synth 8-9661] initial value of parameter 'ACCU_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv:40]
+WARNING: [Synth 8-9661] initial value of parameter 'IS_MVU' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:47]
+WARNING: [Synth 8-9661] initial value of parameter 'COMPUTE_CORE' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:48]
+WARNING: [Synth 8-9661] initial value of parameter 'MW' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:49]
+WARNING: [Synth 8-9661] initial value of parameter 'MH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:50]
+WARNING: [Synth 8-9661] initial value of parameter 'PE' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:51]
+WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:52]
+WARNING: [Synth 8-9661] initial value of parameter 'ACTIVATION_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:55]
+WARNING: [Synth 8-9661] initial value of parameter 'WEIGHT_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:56]
+WARNING: [Synth 8-9661] initial value of parameter 'ACCU_WIDTH' is omitted [/home/andreea/finn/finn-rtllib/mvu/mvu_vvu_axi.sv:57]
+WARNING: [Synth 8-9661] initial value of parameter 'LEN' is omitted [/home/andreea/finn/finn-rtllib/mvu/replay_buffer.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'REP' is omitted [/home/andreea/finn/finn-rtllib/mvu/replay_buffer.sv:37]
+WARNING: [Synth 8-9661] initial value of parameter 'W' is omitted [/home/andreea/finn/finn-rtllib/mvu/replay_buffer.sv:38]
+WARNING: [Synth 8-6901] identifier 'IN_WIDTH_PADDED' is used before its declaration [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_wrapper.v:38]
+WARNING: [Synth 8-6901] identifier 'OUT_WIDTH_PADDED' is used before its declaration [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_wrapper.v:41]
+WARNING: [Synth 8-10592] closing label :ConvolutionInputGenerator_rtl_0 is only allowed in SystemVerilog mode [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_wrapper.v:74]
+WARNING: [Synth 8-10592] closing label :ConvolutionInputGenerator_rtl_0 is only allowed in SystemVerilog mode [/tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_p8wvajtb/ConvolutionInputGenerator_rtl_0_wrapper.v:74]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2039.273 ; gain = 365.766 ; free physical = 1122 ; free virtual = 3538
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 151.688
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3076.973; parent = 2045.211; children = 1031.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_finn_design_wrapper_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/ip/design_1_finn_design_wrapper_0_0/synth/design_1_finn_design_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_wrapper' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'finn_design' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:357]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_ConvolutionInputGenerator_rtl_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_ConvolutionInputGenerator_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_ConvolutionInputGenerator_rtl_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_ConvolutionInputGenerator_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_FMPadding_rtl_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_FMPadding_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_FMPadding_rtl_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_FMPadding_rtl_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axilite_AWREADY' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7071] port 's_axilite_WREADY' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7071] port 's_axilite_BVALID' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7071] port 's_axilite_BRESP' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7071] port 's_axilite_ARREADY' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7071] port 's_axilite_RVALID' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7071] port 's_axilite_RDATA' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7071] port 's_axilite_RRESP' of module 'finn_design_FMPadding_rtl_0_0' is unconnected for instance 'FMPadding_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+WARNING: [Synth 8-7023] instance 'FMPadding_rtl_0' of module 'finn_design_FMPadding_rtl_0_0' has 25 connections declared, but only 17 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:456]
+INFO: [Synth 8-6157] synthesizing module 'MVAU_hls_0_imp_7OH4JA' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:12]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_hls_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_hls_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_hls_0_wstrm_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_0_wstrm_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_hls_0_wstrm_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_0_wstrm_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MVAU_hls_0_wstrm_0' is unconnected for instance 'MVAU_hls_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+WARNING: [Synth 8-7023] instance 'MVAU_hls_0_wstrm' of module 'finn_design_MVAU_hls_0_wstrm_0' has 24 connections declared, but only 16 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'MVAU_hls_0_imp_7OH4JA' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:12]
+INFO: [Synth 8-6157] synthesizing module 'MVAU_hls_1_imp_ZIW0NT' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:81]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_hls_1_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_hls_1_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_hls_1_wstrm_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_1_wstrm_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_hls_1_wstrm_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_hls_1_wstrm_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MVAU_hls_1_wstrm_0' is unconnected for instance 'MVAU_hls_1_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+WARNING: [Synth 8-7023] instance 'MVAU_hls_1_wstrm' of module 'finn_design_MVAU_hls_1_wstrm_0' has 24 connections declared, but only 16 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'MVAU_hls_1_imp_ZIW0NT' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:81]
+INFO: [Synth 8-6157] synthesizing module 'MVAU_rtl_0_imp_1DNJB9Y' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:150]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_rtl_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_rtl_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_rtl_0_wstrm_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_rtl_0_wstrm_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_rtl_0_wstrm_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_MVAU_rtl_0_wstrm_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MVAU_rtl_0_wstrm_0' is unconnected for instance 'MVAU_rtl_0_wstrm' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+WARNING: [Synth 8-7023] instance 'MVAU_rtl_0_wstrm' of module 'finn_design_MVAU_rtl_0_wstrm_0' has 24 connections declared, but only 16 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'MVAU_rtl_0_imp_1DNJB9Y' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:150]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingDataWidthConverter_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingDataWidthConverter_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_1_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingDataWidthConverter_rtl_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_1_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingDataWidthConverter_rtl_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_2_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingDataWidthConverter_rtl_2_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_2_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingDataWidthConverter_rtl_2_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_rtl_0_0' is unconnected for instance 'StreamingFIFO_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:528]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_rtl_0_0' is unconnected for instance 'StreamingFIFO_rtl_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:528]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_rtl_0' of module 'finn_design_StreamingFIFO_rtl_0_0' has 10 connections declared, but only 8 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:528]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_rtl_1_imp_1KRB1SN' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:219]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_fifo_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_rtl_1_imp_1KRB1SN' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:219]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_rtl_2_imp_1FWKJ6V' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:265]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_1' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_fifo_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_1' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_fifo_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_rtl_2_imp_1FWKJ6V' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:265]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_rtl_3_imp_92O214' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:311]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_2' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_fifo_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_2' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_fifo_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_rtl_3_imp_92O214' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:311]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_4_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_4_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_4_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_4_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_rtl_4_0' is unconnected for instance 'StreamingFIFO_rtl_4' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:564]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_rtl_4_0' is unconnected for instance 'StreamingFIFO_rtl_4' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:564]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_rtl_4' of module 'finn_design_StreamingFIFO_rtl_4_0' has 10 connections declared, but only 8 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:564]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_5_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_5_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_5_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_5_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_rtl_5_0' is unconnected for instance 'StreamingFIFO_rtl_5' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:573]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_rtl_5_0' is unconnected for instance 'StreamingFIFO_rtl_5' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:573]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_rtl_5' of module 'finn_design_StreamingFIFO_rtl_5_0' has 10 connections declared, but only 8 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:573]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_6_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_6_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_6_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_6_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_rtl_6_0' is unconnected for instance 'StreamingFIFO_rtl_6' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:582]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_rtl_6_0' is unconnected for instance 'StreamingFIFO_rtl_6' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:582]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_rtl_6' of module 'finn_design_StreamingFIFO_rtl_6_0' has 10 connections declared, but only 8 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:582]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_7_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_7_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_7_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_7_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_rtl_7_0' is unconnected for instance 'StreamingFIFO_rtl_7' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:591]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_rtl_7_0' is unconnected for instance 'StreamingFIFO_rtl_7' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:591]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_rtl_7' of module 'finn_design_StreamingFIFO_rtl_7_0' has 10 connections declared, but only 8 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:591]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_8_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_8_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_8_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_8_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_rtl_8_0' is unconnected for instance 'StreamingFIFO_rtl_8' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:600]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_rtl_8_0' is unconnected for instance 'StreamingFIFO_rtl_8' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:600]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_rtl_8' of module 'finn_design_StreamingFIFO_rtl_8_0' has 10 connections declared, but only 8 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:600]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_9_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_9_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_9_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingFIFO_rtl_9_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_rtl_9_0' is unconnected for instance 'StreamingFIFO_rtl_9' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:609]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_rtl_9_0' is unconnected for instance 'StreamingFIFO_rtl_9' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:609]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_rtl_9' of module 'finn_design_StreamingFIFO_rtl_9_0' has 10 connections declared, but only 8 given [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:609]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingMaxPool_hls_0_0' [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingMaxPool_hls_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingMaxPool_hls_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/.Xil/Vivado-514812-DESKTOP-N2392HC/realtime/finn_design_StreamingMaxPool_hls_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:357]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_wrapper' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_finn_design_wrapper_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/ip/design_1_finn_design_wrapper_0_0/synth/design_1_finn_design_wrapper_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2112.180 ; gain = 438.672 ; free physical = 1143 ; free virtual = 3560
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.941; parent = 2112.180; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2129.992 ; gain = 456.484 ; free physical = 1089 ; free virtual = 3505
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3161.754; parent = 2129.992; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2129.992 ; gain = 456.484 ; free physical = 1069 ; free virtual = 3486
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3161.754; parent = 2129.992; children = 1031.762
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2129.992 ; gain = 0.000 ; free physical = 1019 ; free virtual = 3436
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_0_0/finn_design_StreamingFIFO_rtl_0_0/finn_design_StreamingFIFO_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_0'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_0_0/finn_design_StreamingFIFO_rtl_0_0/finn_design_StreamingFIFO_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_0'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_rtl_0_0/finn_design_FMPadding_rtl_0_0/finn_design_FMPadding_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/FMPadding_rtl_0'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_rtl_0_0/finn_design_FMPadding_rtl_0_0/finn_design_FMPadding_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/FMPadding_rtl_0'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_0/finn_design_fifo_0/finn_design_fifo_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_1/fifo'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_0/finn_design_fifo_0/finn_design_fifo_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_1/fifo'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_rtl_0_0/finn_design_ConvolutionInputGenerator_rtl_0_0/finn_design_ConvolutionInputGenerator_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/ConvolutionInputGenerator_rtl_0'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_rtl_0_0/finn_design_ConvolutionInputGenerator_rtl_0_0/finn_design_ConvolutionInputGenerator_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/ConvolutionInputGenerator_rtl_0'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_1/finn_design_fifo_1/finn_design_fifo_1_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_2/fifo'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_1/finn_design_fifo_1/finn_design_fifo_1_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_2/fifo'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingDataWidthConverter_rtl_0'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingDataWidthConverter_rtl_0'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_2/finn_design_fifo_2/finn_design_fifo_2_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_3/fifo'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_2/finn_design_fifo_2/finn_design_fifo_2_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_3/fifo'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_0_0/finn_design_MVAU_hls_0_0/finn_design_MVAU_hls_0_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_0/MVAU_hls_0'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_0_0/finn_design_MVAU_hls_0_0/finn_design_MVAU_hls_0_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_0/MVAU_hls_0'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_0_wstrm_0/finn_design_MVAU_hls_0_wstrm_0/finn_design_MVAU_hls_0_wstrm_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_0/MVAU_hls_0_wstrm'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_0_wstrm_0/finn_design_MVAU_hls_0_wstrm_0/finn_design_MVAU_hls_0_wstrm_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_0/MVAU_hls_0_wstrm'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_4_0/finn_design_StreamingFIFO_rtl_4_0/finn_design_StreamingFIFO_rtl_4_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_4'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_4_0/finn_design_StreamingFIFO_rtl_4_0/finn_design_StreamingFIFO_rtl_4_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_4'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingDataWidthConverter_rtl_1'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingDataWidthConverter_rtl_1'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_5_0/finn_design_StreamingFIFO_rtl_5_0/finn_design_StreamingFIFO_rtl_5_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_5'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_5_0/finn_design_StreamingFIFO_rtl_5_0/finn_design_StreamingFIFO_rtl_5_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_5'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingMaxPool_hls_0_0/finn_design_StreamingMaxPool_hls_0_0/finn_design_StreamingMaxPool_hls_0_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingMaxPool_hls_0'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingMaxPool_hls_0_0/finn_design_StreamingMaxPool_hls_0_0/finn_design_StreamingMaxPool_hls_0_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingMaxPool_hls_0'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_6_0/finn_design_StreamingFIFO_rtl_6_0/finn_design_StreamingFIFO_rtl_6_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_6'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_6_0/finn_design_StreamingFIFO_rtl_6_0/finn_design_StreamingFIFO_rtl_6_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_6'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_2_0/finn_design_StreamingDataWidthConverter_rtl_2_0/finn_design_StreamingDataWidthConverter_rtl_2_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingDataWidthConverter_rtl_2'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_2_0/finn_design_StreamingDataWidthConverter_rtl_2_0/finn_design_StreamingDataWidthConverter_rtl_2_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingDataWidthConverter_rtl_2'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_7_0/finn_design_StreamingFIFO_rtl_7_0/finn_design_StreamingFIFO_rtl_7_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_7'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_7_0/finn_design_StreamingFIFO_rtl_7_0/finn_design_StreamingFIFO_rtl_7_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_7'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_1_0/finn_design_MVAU_hls_1_0/finn_design_MVAU_hls_1_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_1/MVAU_hls_1'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_1_0/finn_design_MVAU_hls_1_0/finn_design_MVAU_hls_1_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_1/MVAU_hls_1'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_1_wstrm_0/finn_design_MVAU_hls_1_wstrm_0/finn_design_MVAU_hls_1_wstrm_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_1/MVAU_hls_1_wstrm'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_hls_1_wstrm_0/finn_design_MVAU_hls_1_wstrm_0/finn_design_MVAU_hls_1_wstrm_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_hls_1/MVAU_hls_1_wstrm'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_8_0/finn_design_StreamingFIFO_rtl_8_0/finn_design_StreamingFIFO_rtl_8_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_8'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_8_0/finn_design_StreamingFIFO_rtl_8_0/finn_design_StreamingFIFO_rtl_8_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_8'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_0/finn_design_MVAU_rtl_0_0/finn_design_MVAU_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_rtl_0/MVAU_rtl_0'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_0/finn_design_MVAU_rtl_0_0/finn_design_MVAU_rtl_0_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_rtl_0/MVAU_rtl_0'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_wstrm_0/finn_design_MVAU_rtl_0_wstrm_0/finn_design_MVAU_rtl_0_wstrm_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_rtl_0/MVAU_rtl_0_wstrm'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_wstrm_0/finn_design_MVAU_rtl_0_wstrm_0/finn_design_MVAU_rtl_0_wstrm_0_in_context.xdc] for cell 'inst/finn_design_i/MVAU_rtl_0/MVAU_rtl_0_wstrm'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_9_0/finn_design_StreamingFIFO_rtl_9_0/finn_design_StreamingFIFO_rtl_9_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_9'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_9_0/finn_design_StreamingFIFO_rtl_9_0/finn_design_StreamingFIFO_rtl_9_0_in_context.xdc] for cell 'inst/finn_design_i/StreamingFIFO_rtl_9'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2175.949 ; gain = 0.000 ; free physical = 917 ; free virtual = 3330
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2175.949 ; gain = 0.000 ; free physical = 912 ; free virtual = 3325
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 614 ; free virtual = 3030
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 609 ; free virtual = 3025
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/FMPadding_rtl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_1/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/ConvolutionInputGenerator_rtl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_2/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingDataWidthConverter_rtl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_3/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/MVAU_hls_0/MVAU_hls_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/MVAU_hls_0/MVAU_hls_0_wstrm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingDataWidthConverter_rtl_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingMaxPool_hls_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingDataWidthConverter_rtl_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/MVAU_hls_1/MVAU_hls_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/MVAU_hls_1/MVAU_hls_1_wstrm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/MVAU_rtl_0/MVAU_rtl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/MVAU_rtl_0/MVAU_rtl_0_wstrm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/finn_design_i/StreamingFIFO_rtl_9. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 603 ; free virtual = 3018
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 586 ; free virtual = 3003
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 576 ; free virtual = 2997
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1295.434; parent = 1143.745; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 521 ; free virtual = 2951
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1361.429; parent = 1210.983; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 529 ; free virtual = 2960
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1361.494; parent = 1211.049; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 524 ; free virtual = 2954
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.042; parent = 1211.597; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1234 ; free virtual = 3664
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.847; parent = 1226.029; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1226 ; free virtual = 3656
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.847; parent = 1226.029; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1220 ; free virtual = 3650
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.847; parent = 1226.041; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1153 ; free virtual = 3583
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.847; parent = 1226.077; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1064 ; free virtual = 3494
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.847; parent = 1226.077; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1061 ; free virtual = 3491
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.847; parent = 1226.077; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------------+----------+
+|      |BlackBox name                                   |Instances |
++------+------------------------------------------------+----------+
+|1     |finn_design_ConvolutionInputGenerator_rtl_0_0   |         1|
+|2     |finn_design_FMPadding_rtl_0_0                   |         1|
+|3     |finn_design_StreamingDataWidthConverter_rtl_0_0 |         1|
+|4     |finn_design_StreamingDataWidthConverter_rtl_1_0 |         1|
+|5     |finn_design_StreamingDataWidthConverter_rtl_2_0 |         1|
+|6     |finn_design_StreamingFIFO_rtl_0_0               |         1|
+|7     |finn_design_StreamingFIFO_rtl_4_0               |         1|
+|8     |finn_design_StreamingFIFO_rtl_5_0               |         1|
+|9     |finn_design_StreamingFIFO_rtl_6_0               |         1|
+|10    |finn_design_StreamingFIFO_rtl_7_0               |         1|
+|11    |finn_design_StreamingFIFO_rtl_8_0               |         1|
+|12    |finn_design_StreamingFIFO_rtl_9_0               |         1|
+|13    |finn_design_StreamingMaxPool_hls_0_0            |         1|
+|14    |finn_design_MVAU_hls_0_0                        |         1|
+|15    |finn_design_MVAU_hls_0_wstrm_0                  |         1|
+|16    |finn_design_MVAU_hls_1_0                        |         1|
+|17    |finn_design_MVAU_hls_1_wstrm_0                  |         1|
+|18    |finn_design_MVAU_rtl_0_0                        |         1|
+|19    |finn_design_MVAU_rtl_0_wstrm_0                  |         1|
+|20    |finn_design_fifo_0                              |         1|
+|21    |finn_design_fifo_1                              |         1|
+|22    |finn_design_fifo_2                              |         1|
++------+------------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------------+------+
+|      |Cell                                          |Count |
++------+----------------------------------------------+------+
+|1     |finn_design_ConvolutionInputGenerator_rtl_0   |     1|
+|2     |finn_design_FMPadding_rtl_0                   |     1|
+|3     |finn_design_MVAU_hls_0                        |     1|
+|4     |finn_design_MVAU_hls_0_wstrm                  |     1|
+|5     |finn_design_MVAU_hls_1                        |     1|
+|6     |finn_design_MVAU_hls_1_wstrm                  |     1|
+|7     |finn_design_MVAU_rtl_0                        |     1|
+|8     |finn_design_MVAU_rtl_0_wstrm                  |     1|
+|9     |finn_design_StreamingDataWidthConverter_rtl_0 |     1|
+|10    |finn_design_StreamingDataWidthConverter_rtl_1 |     1|
+|11    |finn_design_StreamingDataWidthConverter_rtl_2 |     1|
+|12    |finn_design_StreamingFIFO_rtl_0               |     1|
+|13    |finn_design_StreamingFIFO_rtl_4               |     1|
+|14    |finn_design_StreamingFIFO_rtl_5               |     1|
+|15    |finn_design_StreamingFIFO_rtl_6               |     1|
+|16    |finn_design_StreamingFIFO_rtl_7               |     1|
+|17    |finn_design_StreamingFIFO_rtl_8               |     1|
+|18    |finn_design_StreamingFIFO_rtl_9               |     1|
+|19    |finn_design_StreamingMaxPool_hls_0            |     1|
+|20    |finn_design_fifo                              |     3|
++------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1057 ; free virtual = 3487
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.847; parent = 1226.077; children = 154.926
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3175.695; parent = 2143.934; children = 1031.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2175.949 ; gain = 456.484 ; free physical = 1099 ; free virtual = 3529
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2175.949 ; gain = 502.441 ; free physical = 1096 ; free virtual = 3526
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2175.949 ; gain = 0.000 ; free physical = 1091 ; free virtual = 3521
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2175.949 ; gain = 0.000 ; free physical = 1091 ; free virtual = 3521
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 69a36853
+INFO: [Common 17-83] Releasing license: Synthesis
+100 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 2175.949 ; gain = 640.945 ; free physical = 1284 ; free virtual = 3712
+INFO: [Common 17-1381] The checkpoint '/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/design_1_finn_design_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_finn_design_wrapper_0_0, cache-ID = 1ae2b71729d9a72a
+INFO: [Coretcl 2-1174] Renamed 30 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/andreea/proiect_finn/output_ip_hardware_cu_argmax/stitched_ip/finn_vivado_stitch_proj.runs/design_1_finn_design_wrapper_0_0_synth_1/design_1_finn_design_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_finn_design_wrapper_0_0_utilization_synth.rpt -pb design_1_finn_design_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 23:12:37 2026...

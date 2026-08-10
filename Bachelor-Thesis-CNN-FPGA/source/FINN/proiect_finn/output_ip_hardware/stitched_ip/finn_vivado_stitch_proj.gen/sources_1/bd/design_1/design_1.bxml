@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="40">
+  <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1776352023"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1776352023"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1776352023"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1776352023"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="synth/design_1.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim/design_1.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="design_1_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="hw_handoff/design_1.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="design_1.bda">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="synth/design_1.hwdef">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim/design_1.protoinst">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+    </FileCollection>
+    <BlockContainerCollection>
+      <BlockContainer InstPath="/finn_design_0" IsPR="false" State="Generated">
+        <ActiveVariantSynth FileName="bd/finn_design_inst_0/finn_design_inst_0.bd"/>
+        <ActiveVariantSim FileName="bd/finn_design_inst_0/finn_design_inst_0.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd/finn_design_inst_0/finn_design_inst_0.bd" BDFileset="finn_design_inst_0" BDSourceFile="../../../../finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+    </BlockContainerCollection>
+    <ReferenceCollection>
+      <ModuleReference TargetName="finn_design" Type="Block Design" SubInstancePath="design_1finn_design_1">
+        <TopFile Name="../../../../finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd"/>
+        <FileCollection>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_0_ydn40a1v/Q_srl.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_0_ydn40a1v/StreamingFIFO_rtl_0.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/axi2we.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/fmpadding.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/fmpadding_axi.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/FMPadding_rtl_0.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/swg_pkg.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/ConvolutionInputGenerator_rtl_0_impl.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/swg_common.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/ConvolutionInputGenerator_rtl_0_wrapper.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_3_0rs67dmk/StreamingFIFO_rtl_3.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_f4cj5x1a/dwc.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_f4cj5x1a/dwc_axi.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_doquwkd1/StreamingDataWidthConverter_rtl_0.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_4_h8xhgbxy/StreamingFIFO_rtl_4.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_5_lid_1kvr/StreamingFIFO_rtl_5.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_f4cj5x1a/StreamingDataWidthConverter_rtl_1.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_6_tfkpmsz1/StreamingFIFO_rtl_6.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_7__esnd9yq/StreamingFIFO_rtl_7.v"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_4sx4u.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_vvu_axi.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/replay_buffer.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_MVAU_rtl_0_oa_hx13n/MVAU_rtl_0_wrapper.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_8_difgt9_g/StreamingFIFO_rtl_8.v"/>
+          <File Name="../../../../finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd"/>
+        </FileCollection>
+      </ModuleReference>
+      <ModuleReference TargetName="finn_design" Type="Block Design" SubInstancePath="design_1_finn_design_0">
+        <TopFile Name="../../../../finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd"/>
+        <FileCollection>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_0_ydn40a1v/Q_srl.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_0_ydn40a1v/StreamingFIFO_rtl_0.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/axi2we.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/fmpadding.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/fmpadding_axi.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_FMPadding_rtl_0_zyuj32m2/FMPadding_rtl_0.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/swg_pkg.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/ConvolutionInputGenerator_rtl_0_impl.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/swg_common.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_odh4qvan/ConvolutionInputGenerator_rtl_0_wrapper.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_3_0rs67dmk/StreamingFIFO_rtl_3.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_f4cj5x1a/dwc.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_f4cj5x1a/dwc_axi.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_doquwkd1/StreamingDataWidthConverter_rtl_0.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_4_h8xhgbxy/StreamingFIFO_rtl_4.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_5_lid_1kvr/StreamingFIFO_rtl_5.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_f4cj5x1a/StreamingDataWidthConverter_rtl_1.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_6_tfkpmsz1/StreamingFIFO_rtl_6.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_7__esnd9yq/StreamingFIFO_rtl_7.v"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_4sx4u.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_vvu_8sx9_dsp58.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/mvu_vvu_axi.sv"/>
+          <File Name="../../../../../../../finn/finn-rtllib/mvu/replay_buffer.sv"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_MVAU_rtl_0_oa_hx13n/MVAU_rtl_0_wrapper.v"/>
+          <File Name="../../../../../../../../../tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_8_difgt9_g/StreamingFIFO_rtl_8.v"/>
+          <File Name="../../../../finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd"/>
+        </FileCollection>
+      </ModuleReference>
+    </ReferenceCollection>
+  </CompositeFile>
+</Root>

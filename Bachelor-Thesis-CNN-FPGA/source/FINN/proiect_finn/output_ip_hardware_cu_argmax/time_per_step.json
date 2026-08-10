@@ -1,0 +1,15 @@
+{
+  "step_qonnx_to_finn": 0.05753731727600098,
+  "step_tidy_up": 0.01031494140625,
+  "step_streamline": 0.35614776611328125,
+  "step_convert_to_hw": 0.017685413360595703,
+  "step_create_dataflow_partition": 0.004735231399536133,
+  "step_specialize_layers": 0.0063648223876953125,
+  "step_apply_folding_config": 0.0018649101257324219,
+  "step_minimize_bit_width": 0.019060134887695312,
+  "step_generate_estimate_reports": 4.029273986816406e-05,
+  "step_hw_codegen": 1.3094899654388428,
+  "step_hw_ipgen": 82.10132956504822,
+  "step_set_fifo_depths": 56.627925634384155,
+  "step_create_stitched_ip": 40.09178805351257
+}

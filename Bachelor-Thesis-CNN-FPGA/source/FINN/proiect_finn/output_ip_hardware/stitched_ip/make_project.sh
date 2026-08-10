@@ -1,0 +1,4 @@
+#!/bin/bash 
+cd /tmp/finn_dev_andreea/vivado_stitch_proj_nndapq_3
+vivado -mode batch -source make_project.tcl
+cd /home/andreea/proiect_finn

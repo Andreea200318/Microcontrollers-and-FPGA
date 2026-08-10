@@ -1,0 +1,7 @@
++====================+===================+=====================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                 |
++====================+===================+=====================================================================+
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_cnn_ac_0/inst/inst_dense1/MAC_UNIT/acc_reg_reg[2]/D  |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_cnn_ac_0/inst/inst_dense1/MAC_UNIT/acc_reg_reg[11]/D |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_cnn_ac_0/inst/inst_dense1/MAC_UNIT/acc_reg_reg[6]/D  |
++--------------------+-------------------+---------------------------------------------------------------------+

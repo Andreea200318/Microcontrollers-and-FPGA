@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Andreea" Host="DESKTOP-S2GG9RF" Pid="6888" HostCore="12" HostMemory="08260268032">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Andreea" Host="DESKTOP-S2GG9RF" Pid="15856" HostCore="12" HostMemory="08260268032">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Andreea" Host="DESKTOP-S2GG9RF" Pid="18192" HostCore="12" HostMemory="08260268032">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Andreea" Host="DESKTOP-S2GG9RF" Pid="5072" HostCore="12" HostMemory="08260268032">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Andreea" Host="DESKTOP-S2GG9RF" Pid="5144" HostCore="12" HostMemory="08260268032">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Andreea" Host="DESKTOP-S2GG9RF" Pid="24108" HostCore="12" HostMemory="08260268032">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Andreea" Host="DESKTOP-S2GG9RF" Pid="7172" HostCore="12" HostMemory="08260268032">
+    </Process>
+</ProcessHandle>

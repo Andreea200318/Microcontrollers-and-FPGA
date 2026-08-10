@@ -1,0 +1,26 @@
+{
+  "MVAU_hls_0": {
+    "BRAM_18K": "0",
+    "FF": "4274",
+    "LUT": "8094",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "2"
+  },
+  "StreamingMaxPool_hls_0": {
+    "BRAM_18K": "0",
+    "FF": "450",
+    "LUT": "2456",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MVAU_hls_1": {
+    "BRAM_18K": "0",
+    "FF": "29590",
+    "LUT": "11617",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "5"
+  }
+}

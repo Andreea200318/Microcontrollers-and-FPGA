@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"C:/licenta_zyboooo/licenta_zyboooo.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/sim/design_1_axi_bram_ctrl_0_1.vhd" \
+"C:/licenta_zyboooo/licenta_zyboooo.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/sim/bd_6f02_psr_aclk_0.vhd" \
+"C:/licenta_zyboooo/licenta_zyboooo.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/sim/design_1_rst_ps7_0_50M_1.vhd" \
+"C:/licenta_zyboooo/licenta_zyboooo.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/sim/design_1_axi_gpio_0_2.vhd" \
+"C:/licenta_zyboooo/licenta_zyboooo.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/sim/design_1_axi_gpio_1_1.vhd" \
+
+# Do not sort compile order
+nosort

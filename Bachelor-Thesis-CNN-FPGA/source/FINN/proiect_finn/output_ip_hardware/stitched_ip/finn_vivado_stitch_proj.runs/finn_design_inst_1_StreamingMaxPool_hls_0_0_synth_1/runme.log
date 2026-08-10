@@ -1,0 +1,379 @@
+
+*** Running vivado
+    with args -log finn_design_inst_1_StreamingMaxPool_hls_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_inst_1_StreamingMaxPool_hls_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source finn_design_inst_1_StreamingMaxPool_hls_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andreea/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_0_0gu48umn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingMaxPool_hls_0_f483_7v7/project_StreamingMaxPool_hls_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_1_vra9ly6u'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_68_ah9pv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_2_ci6rrynx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_MVAU_hls_0_wm2359pm/project_MVAU_hls_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_3__fc5fzv9'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_MVAU_rtl_0_sk01edbv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_andreea/code_gen_ipgen_StreamingFIFO_rtl_4_zs21v45w'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_inst_1_StreamingMaxPool_hls_0_0
+Command: synth_design -top finn_design_inst_1_StreamingMaxPool_hls_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46556
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.504 ; gain = 371.770 ; free physical = 85 ; free virtual = 3009
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2977.719; parent = 2006.441; children = 971.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finn_design_inst_1_StreamingMaxPool_hls_0_0' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ip/finn_design_inst_1_StreamingMaxPool_hls_0_0/synth/finn_design_inst_1_StreamingMaxPool_hls_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_buf_V_RAM_AUTO_1R1W' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_buf_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_buf_V_RAM_AUTO_1R1W' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_buf_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_147_1' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_147_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0_flow_control_loop_pipe_sequential_init' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0_flow_control_loop_pipe_sequential_init' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_147_1' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_147_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_174_8' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_174_8.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_174_8' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_174_8.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_158_6' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_158_6.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_158_6' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_158_6.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingMaxPool_hls_0_regslice_both' [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0_regslice_both' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingMaxPool_hls_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ipshared/712c/hdl/verilog/StreamingMaxPool_hls_0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_inst_1_StreamingMaxPool_hls_0_0' (0#1) [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ip/finn_design_inst_1_StreamingMaxPool_hls_0_0/synth/finn_design_inst_1_StreamingMaxPool_hls_0_0.v:53]
+WARNING: [Synth 8-7129] Port reset in module StreamingMaxPool_hls_0_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_buf_V_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2085.410 ; gain = 457.676 ; free physical = 581 ; free virtual = 3211
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3056.688; parent = 2085.410; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2100.254 ; gain = 472.520 ; free physical = 551 ; free virtual = 3183
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3071.531; parent = 2100.254; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2100.254 ; gain = 472.520 ; free physical = 548 ; free virtual = 3181
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3071.531; parent = 2100.254; children = 971.277
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2100.254 ; gain = 0.000 ; free physical = 521 ; free virtual = 3157
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ip/finn_design_inst_1_StreamingMaxPool_hls_0_0/constraints/StreamingMaxPool_hls_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/design_1/bd/finn_design_inst_1/ip/finn_design_inst_1_StreamingMaxPool_hls_0_0/constraints/StreamingMaxPool_hls_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_inst_1_StreamingMaxPool_hls_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_inst_1_StreamingMaxPool_hls_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2257.004 ; gain = 0.000 ; free physical = 201 ; free virtual = 2857
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2257.004 ; gain = 0.000 ; free physical = 213 ; free virtual = 2869
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 477 ; free virtual = 3138
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 474 ; free virtual = 3135
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_inst_1_StreamingMaxPool_hls_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 467 ; free virtual = 3126
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter1_fsm_reg' in module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_174_8'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter1_fsm_state0 |                               01 |                               01
+  ap_ST_iter1_fsm_state2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in module 'StreamingMaxPool_hls_0_StreamingMaxPool_Precision_Pipeline_VITIS_LOOP_174_8'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 499 ; free virtual = 3163
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+	                8 Bit    Registers := 48    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 22    
++---RAMs : 
+	              112 Bit	(14 X 8 bit)          RAMs := 16    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 98    
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 52    
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 108   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 399 ; free virtual = 3085
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1253.305; parent = 1113.797; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                                           | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_U/ram_reg    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_1_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_2_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_3_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_4_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_5_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_6_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_7_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_8_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_9_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_10_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_11_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_12_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_13_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_14_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_15_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
++------------+--------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 78 ; free virtual = 2738
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1326.327; parent = 1195.521; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 308 ; free virtual = 2928
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1342.999; parent = 1211.364; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+--------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                                           | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_U/ram_reg    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_1_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_2_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_3_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_4_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_5_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_6_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_7_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_8_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_9_U/ram_reg  | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_10_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_11_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_12_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_13_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_14_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst        | grp_StreamingMaxPool_Precision_28u_2u_16u_ap_uint_8_0_128_s_fu_28/buf_V_15_U/ram_reg | Implied   | 16 x 8               | RAM16X1S x 8  | 
++------------+--------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 426 ; free virtual = 3046
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.479; parent = 1214.181; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 629 ; free virtual = 3249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.648; parent = 1214.360; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 629 ; free virtual = 3249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.652; parent = 1214.364; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 629 ; free virtual = 3249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.734; parent = 1214.446; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 629 ; free virtual = 3249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.754; parent = 1214.466; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 629 ; free virtual = 3249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.754; parent = 1214.466; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 629 ; free virtual = 3249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.754; parent = 1214.466; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    16|
+|2     |LUT1     |     4|
+|3     |LUT2     |     6|
+|4     |LUT3     |   406|
+|5     |LUT4     |    26|
+|6     |LUT5     |    80|
+|7     |LUT6     |   414|
+|8     |RAM16X1S |   128|
+|9     |FDRE     |   970|
+|10    |FDSE     |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 629 ; free virtual = 3249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1348.754; parent = 1214.466; children = 139.508
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3196.266; parent = 2224.988; children = 971.277
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2257.004 ; gain = 472.520 ; free physical = 684 ; free virtual = 3303
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2257.004 ; gain = 629.270 ; free physical = 684 ; free virtual = 3303
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2257.004 ; gain = 0.000 ; free physical = 794 ; free virtual = 3413
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2257.004 ; gain = 0.000 ; free physical = 891 ; free virtual = 3511
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 128 instances
+
+Synth Design complete, checksum: afca44ec
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 2257.004 ; gain = 938.957 ; free physical = 1078 ; free virtual = 3697
+INFO: [Common 17-1381] The checkpoint '/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_inst_1_StreamingMaxPool_hls_0_0_synth_1/finn_design_inst_1_StreamingMaxPool_hls_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_inst_1_StreamingMaxPool_hls_0_0, cache-ID = a18dcf67a2e1408f
+INFO: [Coretcl 2-1174] Renamed 26 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/andreea/proiect_finn/output_ip_hardware/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_inst_1_StreamingMaxPool_hls_0_0_synth_1/finn_design_inst_1_StreamingMaxPool_hls_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_inst_1_StreamingMaxPool_hls_0_0_utilization_synth.rpt -pb finn_design_inst_1_StreamingMaxPool_hls_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 15 19:55:11 2026...

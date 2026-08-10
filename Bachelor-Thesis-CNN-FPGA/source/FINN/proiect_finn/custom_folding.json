@@ -1,0 +1,1 @@
+{"Defaults": {}, "MVAU_hls_0": {"PE": 1, "SIMD": 3}, "MVAU_hls_1": {"PE": 1, "SIMD": 8}, "MVAU_hls_2": {"PE": 1, "SIMD": 2}}
